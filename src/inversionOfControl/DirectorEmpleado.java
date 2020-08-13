@@ -2,13 +2,13 @@ package inversionOfControl;
 
 public class DirectorEmpleado implements Empleados {
 
-	// Crear campo tipo creaciónInforme (interfaz)
+	// Crear campo tipo creaciï¿½nInforme (interfaz)
 	private CreacionInformes informeNuevo;
 	
 	private String email;
 	private String nombreEmpresa;
 	
-	// creación de constructor que inyecta la dependencia
+	// creaciï¿½n de constructor que inyecta la dependencia
 	public DirectorEmpleado(CreacionInformes informeNuevo) {
 		
 		this.informeNuevo = informeNuevo;
@@ -30,14 +30,14 @@ public class DirectorEmpleado implements Empleados {
 		this.nombreEmpresa = nombreEmpresa;
 	}
  
-	//método init (ejecutar tareas antes de que el bean este disponible)
+	//mï¿½todo init (ejecutar tareas antes de que el bean este disponible)
 	public void metodoInicial() {
-		System.out.println("Antes de tener disponible el bean, dentro del método init");
+		System.out.println("Antes de tener disponible el bean, dentro del mï¿½todo init");
 	}
 	
-	//método destroy (ejecutar tareas después del uso del bean)
+	//mï¿½todo destroy (ejecutar tareas despuï¿½s del uso del bean)
 	public void metodoFinal() {
-		System.out.println("Después de utilizar el bean, dentro del método destroy");
+		System.out.println("Despuï¿½s de utilizar el bean, dentro del mï¿½todo destroy");
 	}
 	
 	@Override
